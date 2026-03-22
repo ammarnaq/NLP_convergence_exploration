@@ -2,8 +2,7 @@
 
 **Cross-method attribution convergence as evidence for latent pragmatic structure in natural language**
 
-> Six models. Four attribution paradigms. One question:  
-> *If models with fundamentally different inductive biases independently flag the same tokens — what are they detecting?*
+
 
 ---
 
@@ -75,6 +74,15 @@ The ablation ladder is deliberately controlled: each model adds exactly one arch
 - **Attention-exclusive tokens carry pragmatic load**: A \ R ham tokens map to expressive and commissive speech acts under BART-MNLI classification — social language that performs actions rather than stating facts.
 - **Discourse marker enrichment**: Ham A ∩ R tokens are enriched for discourse markers and affirmatives relative to a random permutation baseline.
 
+---
+
+## Implications
+
+- * The models appeared to agree on tokens important to their task of spam classification using a quantifiable space of 'internal reasoning' on tokens that seemingly did not have lexical importance, suggesting instead that the models are relying on features that they were not trained to account for.
+- * The 'space' of reasoning that even classical models are using to make a reasoning decision can be explained by natural language structure such as illocutionary intent.
+- *  This implies that reasoning using pragmatic 'human' markers can be observable across different architectures of AI and is a property of the data itself.
+- *  This project was heavily inspired by the Sufi concept of Nafs (نَفْس) which is an Arabic word occurring in the Quran literally meaning "self", and has been translated as "psyche", "ego" or "soul". The models in this pipeline were trained only to classify spam. What they learned to attend to reveals something about the structure of language that their training objective never asked for and that modern linguistic science may not be able to sufficiently capture A.I. behavior.
+    
 ---
 
 ## Connections to Active Research
