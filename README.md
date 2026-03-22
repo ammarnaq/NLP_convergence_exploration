@@ -26,19 +26,19 @@ The finding: **these sets are not random.** They have consistent linguistic sign
 
 ### 1. Attribution disagreement is informative, not failure
 
-The standard approach treats disagreement between attribution methods as noise — a reason to distrust one or both. We show that disagreement is **structured**: the tokens where methods diverge belong to identifiable linguistic categories, and those categories differ between ham and spam. Disagreement is signal.
+The standard approach treats disagreement between attribution methods as noise — a reason to distrust one or both. We show that disagreement is **structured**: the tokens where methods diverge belong to identifiable linguistic categories, and those categories differ between ham and spam.
 
 ### 2. Class-differential attribution structure
 
-Ham messages yield smaller but more stable consensus sets than spam. The tokens that survive cross-method consensus in ham tend to be discourse markers and relational words ("hope", "ok", "sorry", "thanks"). In spam, consensus tokens are the expected lexical anchors ("free", "win", "claim"). This asymmetry — that different *types* of language produce different *patterns* of model agreement — has not been documented before.
+Ham messages yield smaller but more stable consensus sets than spam. The tokens that survive cross-method consensus in ham tend to be discourse markers and relational words ("hope", "ok", "sorry", "thanks"). In spam, consensus tokens are the expected lexical anchors ("free", "win", "claim"). This asymmetry is consistent across seeds and statistically tested.
 
 ### 3. Attention recovers pragmatically salient tokens invisible to classical methods
 
-Attention-exclusive tokens (A \ R) on the ham side carry illocutionary weight: words that perform social actions (greetings, apologies, expressions of care) rather than transmit information. TF-IDF-based methods are structurally blind to these because their importance is contextual, not statistical. This means attention isn't hallucinating signal — it's detecting a **category of linguistic meaning** that classical attribution cannot access.
+Attention-exclusive tokens (A \ R) on the ham side carry illocutionary weight: words that perform social actions (greetings, apologies, expressions of care) rather than transmit information. TF-IDF-based methods are structurally blind to these because their importance is contextual, not statistical. Attention detects a **category of linguistic meaning** that classical attribution cannot access.
 
 ### 4. Small-scale convergence challenges scale-dependent explanations
 
-Recent work on representational convergence — Huh et al.'s *Platonic Representation Hypothesis* (2024), Thasarathan et al.'s *Universal Sparse Autoencoders* (2025) — documents convergence across large models trained on massive data. Our pipeline produces analogous convergence phenomena with toy-scale models on 5,574 SMS messages. This suggests that cross-method convergence may be a property of **data structure and mathematical optimisation** rather than an emergent phenomenon of scale — a claim with implications for how we understand what models learn and why.
+Recent work on representational convergence — Huh et al.'s *Platonic Representation Hypothesis* (2024), Thasarathan et al.'s *Universal Sparse Autoencoders* (2025) — documents convergence across large models trained on massive data. Our pipeline produces analogous convergence phenomena with toy-scale models on 5,574 SMS messages. This suggests that cross-method convergence may be a property of **data structure and mathematical optimisation** rather than an emergent phenomenon of scale.
 
 ---
 
